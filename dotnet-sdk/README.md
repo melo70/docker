@@ -1,6 +1,6 @@
 Per creare un'immagine che contenga l'sdk per dotnet eseguire i seguenti comandi di esempio e utilizzare per esempio il seguente Dockerfile per la *build*:
 
-```bash
+```yaml
 # Utilizza l'immagine ufficiale .NET SDK basata su Debian
 FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim
 
