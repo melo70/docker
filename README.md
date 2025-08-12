@@ -5,6 +5,14 @@ Per creare un container eseguire i seguenti comandi di esempio:
 ```bash
 docker build -t dotnet-dev .
 ```
+Avendo preparati diversi dockerfile per ognuna delle versioni di dotnet si potrebbe procedere in questo modo:
+
+```bash
+docker build -f Dockerfile.dotnet.sdk.6.0 -t dotnet-dev6 .
+docker build -f Dockerfile.dotnet.sdk.7.0 -t dotnet-dev7 .
+docker build -f Dockerfile.dotnet.sdk.8.0 -t dotnet-dev8 .
+docker build -f Dockerfile.dotnet.sdk.8.0 -t dotnet-dev8 .
+```
 
 Per avviare il container usare il seguente comando:
 
