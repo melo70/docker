@@ -45,9 +45,7 @@ Ora supponendo di aver tutte le versioni disponibili di dotnet-sdk all'interno d
 ```
 dotnet --list-sdks
 ```
-
-
-# 2. Creare applicazioni con versioni specifiche:
+2. Creare applicazioni con versioni specifiche:
 
 # Creare app con .NET 6.0
 ```
@@ -63,7 +61,7 @@ dotnet new console -n MiaApp70 -f net7.0
 dotnet new console -n MiaApp80 -f net8.0
 ```
 
-# 3. Usare global.json per forzare una versione specifica in una directory
+3. Usare global.json per forzare una versione specifica in una directory
 ```
 echo '{
   "sdk": {
@@ -71,7 +69,7 @@ echo '{
   }
 }' > global.json
 ```
-# 4. Verificare quale versione verrà usata
+4. Verificare quale versione verrà usata
 ```
 dotnet --version
 ```
