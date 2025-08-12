@@ -39,10 +39,13 @@ apt search dotnet-sdk
 Ora supponendo di aver tutte le versioni disponibili di dotnet-sdk all'interno del container, per creare applicazioni che si basano su framework differenti si dovrebbero usare i seguenti comandi:
 
 
-# === COMANDI PER GESTIRE MULTIPLE VERSIONI .NET ===
+# COMANDI PER GESTIRE MULTIPLE VERSIONI .NET ===
 
-# 1. Verificare tutte le versioni installate
+1. Verificare tutte le versioni installate
+```
 dotnet --list-sdks
+```
+
 
 # 2. Creare applicazioni con versioni specifiche:
 
