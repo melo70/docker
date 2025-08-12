@@ -63,13 +63,13 @@ dotnet --version
 docker build -t dotnet-dev-debian .
 
 # Eseguire il container in modalità interattiva
-docker run -it --rm -v ${PWD}:/app -p 5000:5000 -p 5001:5001 dotnet-dev-debian
+docker run -it --rm -p 5000:5000 -p 5001:5001 dotnet-dev
 
 # Eseguire il container con un volume persistente per i progetti
-docker run -it --rm -v C:\percorso\ai\tuoi\progetti:/app -p 5000:5000 -p 5001:5001 dotnet-dev-debian
+docker run -it --rm -v C:\percorso\ai\tuoi\progetti:/app -p 5000:5000 -p 5001:5001 dotnet-dev
 
 # Eseguire il container in background
-docker run -d --name dotnet-container -v ${PWD}:/app -p 5000:5000 -p 5001:5001 dotnet-dev-debian
+docker run -d --name dotnet-container -v ${PWD}:/app -p 5000:5000 -p 5001:5001 dotnet-dev
 
 # Entrare nel container se è in esecuzione in background
 docker exec -it dotnet-container bash
