@@ -1,4 +1,4 @@
-Per creare un'immagine che contenga l'sdk per dotnet eseguire i seguenti comandi di esempio e utilizzare per esempio il seguente Dockerfile per la *build*:
+Per creare un'immagine che contenga l'sdk per dotnet eseguire i seguenti comandi di esempio e utilizzare per esempio il seguente Dockerfile per la **build**:
 
 ```dockerfile
 # Utilizza l'immagine ufficiale .NET SDK basata su Debian
