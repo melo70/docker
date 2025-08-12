@@ -1,0 +1,35 @@
+# Utilizza l'immagine ufficiale .NET SDK basata su Debian
+FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim
+
+# Imposta le informazioni del maintainer
+LABEL maintainer="tuo-email@example.com"
+LABEL description="Ambiente di sviluppo .NET Core su Debian"
+
+# Aggiorna i pacchetti e installa strumenti utili per lo sviluppo
+RUN apt-get update && apt-get install -y \
+    curl \
+    wget \
+    git \
+    vim \
+    nano \
+    unzip \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+# Crea una directory di lavoro
+WORKDIR /app
+
+# Copia i file di progetto se esistono (opzionale)
+# COPY *.csproj ./
+# COPY *.sln ./
+
+# Espone la porta 5000 e 5001 (HTTP e HTTPS di default per .NET)
+EXPOSE 5000
+EXPOSE 5001
+
+# Imposta le variabili d'ambiente
+ENV ASPNETCORE_URLS=http://+:5000
+ENV DOTNET_CLI_TELEMETRY_OPTOUT=1
+
+# Comando di default
+CMD ["bash"]
