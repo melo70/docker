@@ -1,5 +1,3 @@
-# docker
-
 ## Indice
 
 1. [Introduzione alle Stringhe a Lunghezza Prefissa](#1-introduzione-alle-stringhe-a-lunghezza-prefissa)
