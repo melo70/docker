@@ -3,7 +3,7 @@
 ## Indice
 
 1. [Introduzione alle Stringhe a Lunghezza Prefissa](#1-introduzione-alle-stringhe-a-lunghezza-prefissa)
-2. [MSSQL SERVER ](/docker/mssql-server/READEME.md)
+2. [MSSQL SERVER ](/mssql-server/READEME.md)
 3. [Ottimizzazione della Rappresentazione](#3-ottimizzazione-della-rappresentazione)
 4. [Funzioni di Utilità](#4-funzioni-di-utilità)
    - 4.1 [PS_len: Lunghezza in Tempo Costante](#41-ps_len-lunghezza-in-tempo-costante)
